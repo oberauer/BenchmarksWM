@@ -1,0 +1,23 @@
+Explanation of variables for data files from Shepherdson, Oberauer, & Souza (2018):
+
+Experiments 1 & S1a [same data file---"VisualVerbal(L200H5000).csv"]:
+subj_idx = subject ID number
+size = number of items in array (1, 2, 4, 6)
+rt = response time (seconds)
+correct = whether response was correct (0 = incorrect, 1 = correct)
+task = whether the task used verbal stimuli (Experiment 1) or visual stimuli (Experiment 1a)
+CSI = duration between cue and probe stimulus (milliseconds: 0 = no cue, 100, 400, 2000)
+probe = type of change detection probe (pos = positive/match, neg = negative/mismatch, int = intrusion/mismatch)
+corresp = which response was correct (0 = mismatch, 1 = match)
+response = actual response produced (0 = mismatch, 1 = match)
+
+Experiment 2 ["word_data(L200H5000).csv"]:
+subj_idx, probe, rt, correct, response = as above
+CSI = duration between cue and probe stimulus (milliseconds; No = no cue, 100, 400, 2000)
+size = number of items in array (2, 4, 6, 8)
+stim = analogous to corresp above (1 = mismatch, 2 = match)
+
+Experiment S1b ["Souza1b(L200H5000).csv"]:
+subj_idx, size, rt, correct, corresp, probe = as Experiments 1 & S1a
+stim = as Experiment 2
+CSI = duration between cue and probe stimulus (milliseconds; No = no cue, 100, 400, 1000, 2000)

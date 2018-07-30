@@ -1,6 +1,16 @@
 # Plot Delayed-Estimation effect of set size on response distributions
 
 
+#remove all data and functions
+rm(list=ls())
+
+# Set the paths ---------------------------------------------------------------------------------------------
+# to automatically get the path of the current folder use rstudioapi
+library(rstudioapi) 
+current_path <- getActiveDocumentContext()$path 
+myDir <- dirname(current_path)
+setwd(myDir)
+
 source(paste(dirname(getwd()), "/functions/lineplot.ci.R", sep=""))
 
 DE <- read.table("WeijiDelayedEstimation.dat", header=F)

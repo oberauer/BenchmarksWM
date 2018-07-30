@@ -1,12 +1,13 @@
 
-############ Figure 5: Brown-Peterson (A), Forgetting with constant vs. variable distractors (B), 
-## Forgetting in visual WM (Ricker et al, 2014) (C)
+############ Figure 5: Brown-Peterson (A), Forgetting with constant vs. variable distractors (B)
 
 library(readxl)
 library(sciplot)
 library(tidyr)
 library(plyr)
 library(dplyr)
+library(plotrix)
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))  # sets the directory of location of this script as the current directory
 source(paste(dirname(getwd()), "/functions/plot.confint.R", sep=""))
 source(paste(dirname(getwd()), "/functions/lineplot.ci.R", sep=""))
 source(paste(dirname(getwd()), "/functions/Confint.R", sep=""))
@@ -58,8 +59,8 @@ p2f <- 0
 #par(mfrow=c(1,1))
 if (p2f) {
   pdf(file="Floden00F3.pdf",height=8,width=12)
-} else {x11(height=8,width=12)}
-layout(matrix(1:4,2,2,byrow=T))
+} else {x11(height=8,width=16)}
+layout(matrix(1:2,1,2,byrow=T))
 par(mar=c(4,4,4,2))
 
 plot(0,0, xlim=c(-0.2,60.2),ylim=c(0,1), type="n", las=1,
@@ -89,29 +90,5 @@ axis.break(2,.35,style="slash")
 axis(2, at=seq(from=.4,to=1.,by=.1),lwd=1, las=1, lwd.ticks=1,cex.axis=1)
 title("B: Forgetting in Verbal Complex Span")
 
-plot(0,0, xlim=c(0,max(r14m$RI)+1),ylim=c(0.65,.9), type="n", las=1, yaxt="n",
-     xlab="Retention Interval (Seconds)", ylab="Proportion Correct",cex.lab=1)
-arrows(filter(r14m, ITI=="long")$RI,filter(r14m, ITI=="long")$accuracy-filter(r14m, ITI=="long")$se,
-       filter(r14m, ITI=="long")$RI,filter(r14m, ITI=="long")$accuracy+filter(r14m, ITI=="long")$se, 
-       length=0.1, angle=90, code=3) 
-arrows(filter(r14m, ITI=="medium")$RI,filter(r14m, ITI=="medium")$accuracy-filter(r14m, ITI=="medium")$se,
-       filter(r14m, ITI=="medium")$RI,filter(r14m, ITI=="medium")$accuracy+filter(r14m, ITI=="medium")$se, 
-       length=0.1, angle=90, code=3) 
-arrows(filter(r14m, ITI=="short")$RI,filter(r14m, ITI=="short")$accuracy-filter(r14m, ITI=="short")$se,
-       filter(r14m, ITI=="short")$RI,filter(r14m, ITI=="short")$accuracy+filter(r14m, ITI=="short")$se, 
-       length=0.1, angle=90, code=3) 
-
-lines(filter(r14m, ITI=="long")$RI,filter(r14m, ITI=="long")$accuracy,lwd=2)
-points(filter(r14m, ITI=="long")$RI,filter(r14m, ITI=="long")$accuracy,cex=1,pch=21,bg="black")
-lines(filter(r14m, ITI=="medium")$RI,filter(r14m, ITI=="medium")$accuracy,lwd=2,lty="dashed")
-points(filter(r14m, ITI=="medium")$RI,filter(r14m, ITI=="medium")$accuracy,cex=1,pch=22,bg="gray")
-lines(filter(r14m, ITI=="short")$RI,filter(r14m, ITI=="short")$accuracy,lwd=2,lty="dotted")
-points(filter(r14m, ITI=="short")$RI,filter(r14m, ITI=="short")$accuracy,cex=1,pch=23,bg="white")
-axis.break(2,.65,style="slash") 
-axis(2, at=seq(from=.7,to=1,by=.05),lwd=1, las=1, lwd.ticks=1,cex.axis=1)
-legend(9,.9,c("Long (16 s)","Medium (6 s)","Short (1 s)"),
-       lty=c("solid","dashed","dotted"),
-       pch=c(21,22,23),pt.bg=c("black","gray","white"),pt.cex=1,y.intersp = 1)
-title("C: Forgetting of Visual Stimuli")
 
 if (p2f) {dev.off()}

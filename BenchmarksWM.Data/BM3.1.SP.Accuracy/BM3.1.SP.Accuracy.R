@@ -1,5 +1,6 @@
 ########### Figure 7: Serial-Position Effects on Accuracy ##############
 
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))  # sets the directory of location of this script as the current directory
 library("Hmisc")
 source(paste(dirname(getwd()), "/functions/plot.confint.R", sep=""))
 source(paste(dirname(getwd()), "/functions/Bakeman.R", sep=""))

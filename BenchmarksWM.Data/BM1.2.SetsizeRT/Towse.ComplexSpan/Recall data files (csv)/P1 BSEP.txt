@@ -1,0 +1,112 @@
+PARTICIPANT DETAILS----------------------------------------------																				
+NAME:	P1 BSEP																			
+AGE:	19																			
+SCHOOL/COLLEGE:	UG2																			
+DATE:	Tuesday	 May 24	2005																	
+TIME:	11:03 am																			
+EXPERIMENT:	Verbal Recall Purple																			
+SELECTED SET:	Random Sentences A																			
+SELECTED ORDER:	Order A																			
+DIRECTION:	Ascending																			
+																				
+PRACTICE RESULTS----------------------------------------------																				
+Task:	Verbal Recall Purple																			
+List Length 2:	Correct(3.333333	2.666667)	Correct(2.283333	2.183333)																
+Task:	Word Task																			
+List Length 2:	Not completed	Not completed																		
+																				
+																				
+																				
+																				
+																				
+																				
+PRACTICE STAGE---------------------------------------------------																				
+																				
+First Stage PRACTICE Results																				
+																				
+List Length:	2	Trial:	1																	
+Sentences: 	An insect that buzzes is called a bee	A spider catches flies in its web																		
+Presentation Time:	3.333333	2.666667																		
+Target: 	heat	dive																		
+Response:	heat	dive																		
+Trial:	Correct Trial																			
+																				
+List Length:	2	Trial:	2																	
+Sentences: 	The cat sat on the mat	The cow jumped over the moon																		
+Presentation Time:	2.283333	2.183333																		
+Target: 	ice	cage																		
+Response:	ice	cage																		
+Trial:	Correct Trial																			
+List Length Two Score:	02-Feb																			
+																				
+																				
+																				
+MAIN EXPERIMENT-------------------------------------------																				
+																				
+First Stage Results:																				
+																				
+List Length:	2	Trial:	1																	
+Sentences: 	A mother cat has baby kittens	Food and water makes plants grow																		
+Presentation Time:	2.9	2.566667					SP1	SP2				Trial Correct								
+Target: 	fast	dog					1	1				1								
+Response:	fast	dog																		
+Trial:	Correct Trial																			
+																				
+List Length:	2	Trial:	2																	
+Sentences: 	We wear a coat when we are cold	I have a tooth brush to help clean my teeth																		
+Presentation Time:	2.633333	2.6					SP1	SP2				Trial Correct								
+Target: 	night	boat					1	1				1								
+Response:	night	boat																		
+Trial:	Correct Trial																			
+																				
+List Length:	2	Trial:	3																	
+Sentences: 	A cow eats long green grass	The grass in the fields is coloured green																		
+Presentation Time:	2.55	2.6					SP1	SP2				Trial Correct								
+Target: 	bird	three					1	1				1								
+Response:	bird	three																		
+Trial:	Correct Trial																			
+List Length Two Score:	03-Mar																			
+																				
+List Length:	3	Trial:	1																	
+Sentences: 	The opposite of something bad is something good	I am very thirsty and I really want a drink	An important man with a crown is called a king																	
+Presentation Time:	3.016667	2.8	3.266667				SP1	SP2	SP3			Trial Correct								
+Target: 	four	race	trunk				1	1	1			1								
+Response:	four	race	trunk																	
+Trial:	Correct Trial																			
+																				
+List Length:	3	Trial:	2																	
+Sentences: 	The window in my house is made of glass	At night I go to bed and fall asleep	The football team scored the winning goal																	
+Presentation Time:	2.966667	2.733333	2.616667				SP1	SP2	SP3			Trial Correct								
+Target: 	red	queen	face				1	1	1			1								
+Response:	red	queen	face																	
+Trial:	Correct Trial																			
+																				
+List Length:	3	Trial:	3																	
+Sentences: 	We have to stop look and listen	The next number after eight is nine	'Moo moo' said the black and white cow																	
+Presentation Time:	2.566667	2.65	2.933333				SP1	SP2	SP3			Trial Correct								
+Target: 	wand	sheep	cut				0	0	1			0								
+Response:	dk	dk	cut																	
+Trial:	Incorrect Trial																			
+List Length Three Score:	02-Mar																			
+																				
+List Length:	4	Trial:	1																	
+Sentences: 	I eat my dinner with a knife and fork	The fireman came to put out the fire	After lunch Jack and Jill went up the hill	The next number after four is five																
+Presentation Time:	2.683333	2.233333	3.066667	2.416667			SP1	SP2	SP3	SP4		Trial Correct								
+Target: 	bed	cat	neck	farm			1	1	0	1		0								
+Response:	bed	cat	dk	farm																
+Trial:	Incorrect Trial																			
+																				
+List Length:	4	Trial:	2																	
+Sentences: 	To make a snowman you need snow	I went to the cinema and watched a film	Every day I wash and comb my hair	Mum and I read a story from a book																
+Presentation Time:	2.766667	2.533333	2.783333	2.883333			SP1	SP2	SP3	SP4		Trial Correct								
+Target: 	blue	gloves	knife	hot			1	1	0	1		0								
+Response:	blue	gloves	dk	hot																
+Trial:	Incorrect Trial																			
+																				
+List Length:	4	Trial:	3																	
+Sentences: 	My friends and I play hide and seek	The big spider has eight hairy legs	If I hear a joke it makes me laugh	Mum likes to sit down in an arm chair																
+Presentation Time:	2.583333	2.716667	2.8	2.866667			SP1	SP2	SP3	SP4		Trial Correct								
+Target: 	chips	mouth	swim	bread			1	1	1	0		0								
+Response:	chips	mouth	swim	chair																
+Trial:	Incorrect Trial																			
+List Length Four Score:	0/3																			

@@ -5,7 +5,9 @@ library("Hmisc")
 source(paste(dirname(getwd()), "/functions/Confint.R", sep=""))
 source(paste(dirname(getwd()), "/functions/Bakeman.R", sep=""))
 
-d = read_excel("ChenCowan2009.xlsx")
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))  # sets the directory of location of this script as the current directory
+
+d = as.data.frame(read_excel("ChenCowan2009.xlsx"))
 names(d)[1:2] <- c("group", "id") #group 2 = silent (from Chen & Cowan 2005) 4 = AS; subject numbers repeat across groups but are NOT the same people!
 dAS <- subset(d, group==4)
 chunkdata <- Confint(Bakeman(dAS[,3:12])) # each observation can be seen as a sample from a Poisson distribution, which can be approximated by a Normal

@@ -1,0 +1,3 @@
+One sheet has a label key, a second sheet has the trial-by-trial data, 
+and a third sheet has the subject means arranged with all of one subject per line, the form we used for the analyses. 
+That might be important in addition to the raw data, in case any kind of discrepancy emerges.

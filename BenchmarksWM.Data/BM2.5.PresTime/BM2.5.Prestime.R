@@ -1,6 +1,6 @@
 ############ Figure 6: Effect of presentation time: Tan & Ward (2008) and Bays et al (2011) ########
 
-
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))  # sets the directory of location of this script as the current directory
 
 library("Hmisc")
 library("circular")

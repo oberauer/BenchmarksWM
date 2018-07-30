@@ -6,6 +6,8 @@ library(tidyr)
 library(plyr)
 library(dplyr)
 
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))  # sets the directory of location of this script as the current directory
+
 colors <- c("black", "grey50", "grey80", "white")
 
 plotpanel <- function(post,title4panel) {

@@ -1,0 +1,6 @@
+The format of the data in these files is as follows:  
+Row 1: subject/trial information  
+Row 2: serial position as a function of output position.  
+Row 3: inter-response time as a function of output position  
+
+The code 88 means that the subject made an extra-list intrusion

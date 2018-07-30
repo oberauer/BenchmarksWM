@@ -6,6 +6,7 @@ library(sciplot)
 library(tidyr)
 library(plyr)
 library(dplyr)
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))  # sets the directory of location of this script as the current directory
 source(paste(dirname(getwd()), "/functions/BakemanL.R", sep=""))
 
 #remap levels into consistent nomenclature after gathering

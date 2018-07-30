@@ -75,9 +75,6 @@ for (i in 1:dimensions[1])  {
     if (xdim == 1) colidx <- j else colidx = i
     CI[i,j,1] = m[i,j] + 1.96*std[i,j]/sqrt(N)
     CI[i,j,2] = m[i,j] - 1.96*std[i,j]/sqrt(N)
-    #if (upper==T) uiw <- m[i,j]-HDI[i,j,1] else uiw <- 0
-    #if (lower==T) liw <- HDI[i,j,2]-m[i,j] else liw <- 0
-    #plotCI(x, m[i,j], uiw=uiw, liw=liw, xlim=xlim, gap=0.3, add=TRUE, type="n", ...)
     errbar(x, m[i,j], yplus=CI[i,j,1], yminus=CI[i,j,2], xlim=xlim, ylim=ylim,add=T,type="l", errbar.col=col[colidx], ...)
   }
 }

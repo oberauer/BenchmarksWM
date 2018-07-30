@@ -6,10 +6,12 @@ graphics.off()
 library("Hmisc")
 library("readxl")
 library("stats")
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))  # sets the directory of location of this script as the current directory
 source(paste(dirname(getwd()), "/functions/plot.confint.R", sep=""))
 source(paste(dirname(getwd()), "/functions/lineplot.ci.R", sep=""))
 source(paste(dirname(getwd()), "/functions/Confint.R", sep=""))
 source(paste(dirname(getwd()), "/functions/Bakeman.R", sep=""))
+
 
 ptypes <- c(21:25, 21:25)
 bgcolors <- c("black", "grey", "white", "grey80", "grey20", "black", "white")
