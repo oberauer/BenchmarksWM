@@ -1,4 +1,7 @@
 # load data
+
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))  # sets the directory of location of this script as the current directory
+
 data<-read.csv('Hedge&Leonardsdata.csv')
 # remove trials not included in RT analysis
 data2<-data[data$Block!=1 & data$TrialCorrect!=0 & data$Trial_type!=0,] 

@@ -3,9 +3,11 @@
 setwd(dirname(rstudioapi::getSourceEditorContext()$path))  # sets the directory of location of this script as the current directory
 library("Hmisc")
 source(paste(dirname(getwd()), "/functions/plot.confint.R", sep=""))
+source(paste(dirname(getwd()), "/functions/lineplot.ci3.R", sep=""))
 source(paste(dirname(getwd()), "/functions/Bakeman.R", sep=""))
 
 colors <- c("black", "grey", "white", "grey80", "grey20", "black", "white")
+ptypes <- c(21:25, 21:25)
 
 ## forward and backward serial recall (Madigan, 1971)
 
@@ -64,4 +66,27 @@ par(new=T)
 legend(0.55, ylimpc[2], legend=legendtext, 
        pt.bg=colors[1:2], lty=c(1,1,2,2), pch=ptypes[c(1,2)], pt.cex = 1.5, xjust=0, yjust=1)
 title("Recognition")
+
+
+### Continuous reproduction of colors in forward serial order (Peteranderl & Oberauer, 2017)
+
+source(paste(dirname(getwd()), "/functions/wrap.R", sep=""))
+
+colordata <- read.table("Peteranderl.2017.long.dat", header=F)
+names(colordata)= c("id", "session", "trial", "serpos", 
+                    "target", "response", "iti1", "iti2", "iti3", "iti4", "time")
+
+# session codes AS condition: 1 = no AS, 2 = AS
+
+colordata$targetrad <- pi*colordata$target/180
+colordata$responserad <- pi*colordata$response/180
+colordata$diffrad <- wrap(colordata$responserad - colordata$targetrad)
+colordata$errorrad <- abs(colordata$diffrad)
+colordata$errordeg <- 180*colordata$errorrad/pi
+aggdat <- aggregate(errordeg ~ id + session + serpos, data = colordata, FUN=mean)
+
+x11()
+lineplot.ci3(data=aggdat, dv="errordeg", iv=c("serpos", "session"), id=1, x=1, off=0.05, ylim=c(0,80),
+             cex=1.3, lty=1, pt = ptypes[c(1,2)], ptcol=colors[1:2], xlab="Serial Position", ylab="Error (deg)")
+legend(4,0,c("Silent", "AS"), pt.bg=colors[1:2], lty=c(1,1), pch=ptypes[c(1,2)], pt.cex = 1.5, yjust=0)
 

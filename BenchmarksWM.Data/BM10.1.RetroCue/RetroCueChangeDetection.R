@@ -1,5 +1,6 @@
 # Retro-cue effect in change detection (Souza et al., 2014)
 
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))  # sets the directory of location of this script as the current directory
 source(paste(dirname(getwd()), "/functions/lineplot.ci.R", sep=""))
 
 Retrocue1 <- read.table("SouzaRetroCueVisVerb.dat", header=F)
