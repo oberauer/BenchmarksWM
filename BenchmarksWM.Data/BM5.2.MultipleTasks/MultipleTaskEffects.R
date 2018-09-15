@@ -1,5 +1,9 @@
 # Within-Domain and Cross-domain effects of processing on storage (Chein, Moore, & Conway, 2011)
 
+rm(list=ls())
+graphics.off()
+
+setwd(dirname(rstudioapi::getSourceEditorContext()$path))  # sets the directory of location of this script as the current directory
 
 library(sciplot)
 library(tidyr)
