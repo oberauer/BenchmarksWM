@@ -1,0 +1,18 @@
+A preregistered replication of the auditory deviant effect: Robust evidence for short-term memory disruption
+
+Serial Position Curves
+
+Header Descriptions:
+
+Session1SteadyStatePos1 = Session 1, Steady State Condition, Serial Position 1
+Session1SteadyStatePos2 = Session 1, Steady State Condition, Serial Position 2
+...
+Session1DeviantPos1 = Session 1, Auditory Deviant Condition, Serial Position 1
+Session1DeviantPos2 = Session 1, Auditory Deviant Condition, Serial Position 2
+...
+Session1ChangingStatePos1 = Session 1, Changing State Condition, Serial Position 1
+Session1ChangingStatePos2 = Session 1, Changing State Condition, Serial Position 2
+
+Sample
+
+Five participants did not show up for the second session, as a consequence of which their data were not analyzed. One person turned off the volume of the computer and therefore could not hear the distractors, so his data files were removed before analysis. The remaining sample consisted of 273 participants (mean age = 22, SD of age = 4), 199 of whom were female.

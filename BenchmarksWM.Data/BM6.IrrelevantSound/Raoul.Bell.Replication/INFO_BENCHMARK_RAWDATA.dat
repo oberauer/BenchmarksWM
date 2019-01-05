@@ -1,0 +1,16 @@
+A preregistered replication of the auditory deviant effect: Robust evidence for short-term memory disruption
+
+Raw Data File
+
+Header descriptions:
+
+Subject	Session	Trial	Condition	Digit presented at Position 1	Digit presented at Position 2	...	Digit presented at position 8	REM:	Digit remembered at position 1	Digit remembered at position 2	...	Digit remembered at position 8	Score	Number of digits remembered in the trial	Response Time	Distractor 1	Distractor 2	... Distractor 10	
+
+Comment: 
+- Condition: SS = Steady State, DEV = Deviant, CS = Changing State
+- Session: Day1 = Session 1, Day2 = Session 2
+- Trial starts with 17 because the raw data do not contain the training trials.
+
+Sample
+
+Five participants did not show up for the second session, as a consequence of which their data were not analyzed. One person turned off the volume of the computer and therefore could not hear the distractors, so his data files were removed before analysis. The remaining sample consisted of 273 participants (mean age = 22, SD of age = 4), 199 of whom were female.

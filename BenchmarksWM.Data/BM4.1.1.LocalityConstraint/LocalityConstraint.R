@@ -1,5 +1,12 @@
 # Locality constraint in serial recall and recall of visual arrays
 
+# Set the paths ---------------------------------------------------------------------------------------------
+# to automatically get the path of the current folder use rstudioapi
+library(rstudioapi) 
+current_path <- getActiveDocumentContext()$path 
+myDir <- dirname(current_path)
+setwd(myDir)
+
 source(paste(dirname(getwd()), "/functions/Confint.R", sep=""))
 source(paste(dirname(getwd()), "/functions/Bakeman.R", sep=""))
 

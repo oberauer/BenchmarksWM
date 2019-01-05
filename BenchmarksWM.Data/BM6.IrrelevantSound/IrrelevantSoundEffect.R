@@ -1,15 +1,20 @@
 # Irrelevant-Sound effect and changing-state effect on serial-order memory (Schlittmacher et al.)
 
+# Set the paths ---------------------------------------------------------------------------------------------
+# to automatically get the path of the current folder use rstudioapi
+library(rstudioapi) 
+current_path <- getActiveDocumentContext()$path 
+myDir <- dirname(current_path)
+setwd(myDir)
+
 library(readxl)
 library(Hmisc)
 source(paste(dirname(getwd()), "/functions/Confint.R", sep=""))
 source(paste(dirname(getwd()), "/functions/Bakeman.R", sep=""))
 
-wd <- getwd()
-setwd("C:\\Daten\\R\\Plots\\Benchmarks\\Schlittmacher.IrrSpeach")
 irrspeech <- read_excel("Vp-Daten SJS-Diss Sprache.xls",sheet=4,col_names=T)  # sheet 4: visual presentation, IS throughout
 irrmusic <- read_excel("Vp-Daten SJS-Diss Musik.xls",sheet=3,col_names=T)     # sheet 3: visual presentation, IS throughout
-setwd(wd)
+
 # subtract irrspeech from 100 because data are error percentages!
 changing <- (100-irrspeech[,which(names(irrspeech)=="item1ch.st."):which(names(irrspeech)=="item9ch.st.")])/100
 steady <- (100-irrspeech[,which(names(irrspeech)=="item1st.st."):which(names(irrspeech)=="item9st.st.")])/100
